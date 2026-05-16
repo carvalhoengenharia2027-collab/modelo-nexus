@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone, Mail } from "lucide-react"
-import Image from "next/image"
+
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -71,14 +71,12 @@ export function Navbar() {
 
             {/* Logo */}
             <a href="/" className="flex items-center hover:opacity-90 transition-opacity">
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/logo_carv.png"
                 alt="Carvalho Engenharia"
-                width={220}
-                height={70}
                 className="h-12 w-auto sm:h-14 object-contain"
                 style={{ mixBlendMode: "lighten" }}
-                priority
               />
             </a>
 
