@@ -5,7 +5,7 @@ import { HardHat, Award, Users, FileCheck } from "lucide-react"
 const stats = [
   { value: "10+", label: "anos de experiência" },
   { value: "500+", label: "obras regularizadas" },
-  { value: "Goiânia", label: "e Aparecida de Goiânia" },
+  { value: "Goiânia", label: "Aparecida, Anápolis e região" },
   { value: "CREA", label: "responsabilidade técnica" },
 ]
 
@@ -91,7 +91,7 @@ export function Sobre() {
             </p>
             <p>
               Com registro ativo no CREA (1017786453D-GO), ofereço responsabilidade técnica em todos os projetos e
-              acompanho pessoalmente cada processo junto às prefeituras de Goiânia e Aparecida de Goiânia.
+              acompanho pessoalmente cada processo junto às prefeituras de Goiânia, Aparecida de Goiânia, Anápolis e região.
             </p>
           </div>
 
