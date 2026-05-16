@@ -1,128 +1,88 @@
 "use client"
 
-import { useEffect, useState, useRef } from "react"
+import { Star, Quote } from "lucide-react"
 
-const commands = [
-  { command: "ping 8.8.8.8", result: "OK 2ms", status: "success" },
-  { command: "firewall status", result: "ACTIVE", status: "success" },
-  { command: "vpn tunnel", result: "ESTABLISHED", status: "success" },
-  { command: "last backup", result: "03:00 SUCCESS", status: "success" },
-  { command: "uptime", result: "847 days", status: "info" },
+const testimonials = [
+  {
+    name: "João Silva",
+    role: "Proprietário",
+    company: "Anápolis/GO",
+    initials: "JS",
+    text: "Regularizei meu imóvel através da Carvalho Engenharia em apenas 15 dias. Agradeço imensamente o atendimento excepcional e a agilidade impressionante. Indico a todos!",
+    stars: 5,
+  },
+  {
+    name: "Maria F.",
+    role: "Proprietária",
+    company: "Goiânia/GO",
+    initials: "MF",
+    text: "Precisava do habite-se urgente para vender meu imóvel. O Caio resolveu tudo em tempo recorde, me manteve informada em cada etapa e o resultado foi excelente. Serviço de verdade.",
+    stars: 5,
+  },
+  {
+    name: "Carlos R.",
+    role: "Empresário",
+    company: "Aparecida de Goiânia/GO",
+    initials: "CR",
+    text: "Meu estabelecimento estava sem carta de ocupação e sem conseguir renovar o alvará de funcionamento. A Carvalho Engenharia resolveu toda a situação com profissionalismo e agilidade total.",
+    stars: 5,
+  },
 ]
 
-export function Terminal() {
-  const [visibleLines, setVisibleLines] = useState<number>(0)
-  const [showFinalMessage, setShowFinalMessage] = useState(false)
-  const [hasAnimated, setHasAnimated] = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated) {
-          setHasAnimated(true)
-          let currentLine = 0
-          const interval = setInterval(() => {
-            currentLine++
-            setVisibleLines(currentLine)
-            if (currentLine >= commands.length) {
-              clearInterval(interval)
-              setTimeout(() => setShowFinalMessage(true), 500)
-            }
-          }, 600)
-          return () => clearInterval(interval)
-        }
-      },
-      { threshold: 0.3 }
-    )
-
-    if (ref.current) observer.observe(ref.current)
-    return () => observer.disconnect()
-  }, [hasAnimated])
-
+export function Testimonials() {
   return (
-    <section id="seguranca" className="py-24 sm:py-32 bg-[#080808]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
-        <div className="text-center mb-12">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-[#33bbff]/10 text-[#33bbff] text-sm font-mono mb-4">
-            DIAGNÓSTICO
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#fafafa] mb-4 text-balance">
-            Sua rede em tempo real
+    <section id="depoimentos" className="py-20 bg-[#050505]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-14">
+          <p className="text-xs uppercase tracking-widest text-[#00aaff] font-semibold mb-3">
+            Depoimentos
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#fafafa] mb-3">
+            O que nossos clientes dizem
           </h2>
           <p className="text-[#888888]">
-            Monitoramento contínuo para garantir 99.9% de uptime
+            Pessoas que regularizaram seus imóveis com a Carvalho Engenharia em Goiânia e região.
           </p>
         </div>
 
-        {/* Terminal window */}
-        <div ref={ref} className="rounded-xl overflow-hidden border border-[#1a1a1a] shadow-2xl">
-          {/* Terminal header */}
-          <div className="bg-[#151515] px-4 py-3 flex items-center gap-2 border-b border-[#1a1a1a]">
-            <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
-            <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
-            <div className="w-3 h-3 rounded-full bg-[#28c840]" />
-            {/* ✅ Nome atualizado para Nexus TI */}
-            <span className="ml-4 text-xs text-[#888888] font-mono">nexus-ti@network-monitor</span>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {testimonials.map((t, i) => (
+            <div
+              key={i}
+              className="bg-[#0f0f0f] border border-[#1a1a1a] rounded-2xl p-6 flex flex-col gap-4 hover:border-[#00aaff]/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,170,255,0.08)]"
+            >
+              {/* Ícone de aspas */}
+              <Quote className="w-6 h-6 text-[#00aaff]/30" />
 
-          {/* Terminal body */}
-          <div className="bg-[#0a0a0a] p-6 font-mono text-sm min-h-[300px]">
-            {commands.slice(0, visibleLines).map((cmd, index) => (
-              <div key={index} className="mb-3 animate-fade-in">
-                <div className="flex items-center gap-2">
-                  <span className="text-[#33bbff]">{">"}</span>
-                  <span className="text-[#888888]">{cmd.command}</span>
-                  <span className="text-[#444444]">—</span>
-                  <span
-                    className={
-                      cmd.status === "success"
-                        ? "text-[#33bbff]"
-                        : "text-[#00aaff]"
-                    }
-                  >
-                    {cmd.result}
-                  </span>
+              {/* Estrelas */}
+              <div className="flex gap-1">
+                {Array.from({ length: t.stars }).map((_, s) => (
+                  <Star key={s} className="w-4 h-4 fill-[#00aaff] text-[#00aaff]" />
+                ))}
+              </div>
+
+              {/* Texto */}
+              <p className="text-[#aaaaaa] text-sm leading-relaxed flex-1">
+                "{t.text}"
+              </p>
+
+              {/* Autor */}
+              <div className="pt-4 border-t border-[#1a1a1a] flex items-center gap-3">
+                {/* Avatar com iniciais */}
+                <div className="w-9 h-9 rounded-full bg-[#00aaff]/10 border border-[#00aaff]/20 flex items-center justify-center shrink-0">
+                  <span className="text-[#00aaff] text-xs font-bold">{t.initials}</span>
+                </div>
+                <div>
+                  <p className="text-[#fafafa] font-semibold text-sm">{t.name}</p>
+                  <p className="text-[#666666] text-xs mt-0.5">
+                    {t.role} · {t.company}
+                  </p>
                 </div>
               </div>
-            ))}
-
-            {showFinalMessage && (
-              <div className="mt-6 pt-4 border-t border-[#1a1a1a] animate-fade-in">
-                <div className="flex items-center gap-2">
-                  <span className="text-[#33bbff]">{">"}</span>
-                  <span className="text-[#fafafa] font-semibold">
-                    {'"Sua rede está em boas mãos."'}
-                  </span>
-                </div>
-              </div>
-            )}
-
-            {/* Blinking cursor */}
-            <div className="flex items-center gap-2 mt-4">
-              <span className="text-[#33bbff]">{">"}</span>
-              <span className="w-2 h-5 bg-[#33bbff] animate-pulse" />
             </div>
-          </div>
+          ))}
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in {
-          animation: fade-in 0.3s ease-out forwards;
-        }
-      `}</style>
     </section>
   )
 }
