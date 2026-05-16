@@ -1,25 +1,25 @@
 "use client"
 
-import { Shield, Server, Cloud, Network, GraduationCap, Radio, HardHat } from "lucide-react"
+import { HardHat, Award, Users, FileCheck } from "lucide-react"
 
 const stats = [
-  { value: "20+", label: "anos de experiência" },
-  { value: "35+", label: "clientes ativos" },
-  { value: "800+", label: "usuários gerenciados" },
-  { value: "99,9%", label: "uptime garantido" },
+  { value: "10+", label: "anos de experiência" },
+  { value: "500+", label: "obras regularizadas" },
+  { value: "Goiânia", label: "e Aparecida de Goiânia" },
+  { value: "CREA", label: "responsabilidade técnica" },
 ]
 
 const competencias = [
-  { icon: Cloud, titulo: "Cloud & Virtualização", descricao: "AWS, Azure, GCP, VMware ESXi e Hyper-V" },
-  { icon: Network, titulo: "Redes & Segurança", descricao: "VPNs IPsec, VLANs, Fortinet, pfSense e UDM-Pro" },
-  { icon: Server, titulo: "Servidores", descricao: "Windows Server, Linux, Docker e Kubernetes" },
-  { icon: Shield, titulo: "Backup & DR", descricao: "Veeam, planejamento e execução de disaster recovery" },
+  { icon: FileCheck, titulo: "Alvarás & Regularizações", descricao: "Alvará de construção, habite-se, carta de ocupação e regularização de obras junto à prefeitura" },
+  { icon: HardHat, titulo: "Projetos de Engenharia", descricao: "Projetos estruturais, elétricos, hidrossanitários e arquitetônicos para residências e empresas" },
+  { icon: Award, titulo: "Perícias e Laudos Técnicos", descricao: "Perícias, vistorias e laudos detalhados para segurança e conformidade do imóvel" },
+  { icon: Users, titulo: "Obras Residenciais", descricao: "Acompanhamento e execução de obras do início ao fim com responsabilidade técnica" },
 ]
 
 const credenciais = [
-  { icon: GraduationCap, label: "Pós-graduado em Segurança da Informação", sub: "UFG" },
-  { icon: Radio, label: "Graduado em Redes de Computadores", sub: "Anhanguera" },
-  { icon: HardHat, label: "Registro CREA Ativo", sub: "Engenharia aplicada à TI" },
+  { label: "Engenheiro Civil", sub: "CREA 1017786453D-GO" },
+  { label: "Pós-graduado em Segurança da Informação", sub: "UFG" },
+  { label: "Mais de 10 anos no mercado", sub: "Goiânia e região" },
 ]
 
 export function Sobre() {
@@ -32,8 +32,8 @@ export function Sobre() {
           <div>
             <p className="text-cyan-400 text-sm font-mono uppercase tracking-widest mb-3">sobre</p>
             <h2 className="text-4xl font-bold text-white leading-tight max-w-xl">
-              Infraestrutura gerenciada por quem{" "}
-              <span className="text-cyan-400">vive isso há mais de 20 anos</span>
+              Engenharia especializada em{" "}
+              <span className="text-cyan-400">regularização de imóveis há mais de 10 anos</span>
             </h2>
           </div>
 
@@ -52,7 +52,7 @@ export function Sobre() {
             >
               <img
                 src="https://res.cloudinary.com/ddnbvkduq/image/upload/f_auto,q_auto/foto-perfil_vqdn8m.jpg"
-                alt="Caio Maracaipe — Especialista em TI"
+                alt="Caio Maracaípe — Engenheiro Civil"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -69,8 +69,8 @@ export function Sobre() {
                 }}
               />
               <div style={{ position: "absolute", bottom: "12px", left: 0, right: 0, textAlign: "center" }}>
-                <p style={{ color: "white", fontSize: "13px", fontWeight: 600, margin: 0 }}>Caio Maracaipe</p>
-                <p style={{ color: "#22d3ee", fontSize: "11px", margin: 0 }}>Especialista em TI</p>
+                <p style={{ color: "white", fontSize: "13px", fontWeight: 600, margin: 0 }}>Caio Maracaípe</p>
+                <p style={{ color: "#22d3ee", fontSize: "11px", margin: 0 }}>Engenheiro Civil</p>
               </div>
             </div>
           </div>
@@ -80,18 +80,18 @@ export function Sobre() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-12">
           <div className="space-y-5 text-white/60 text-base leading-relaxed">
             <p>
-              Sou Caio Maracaipe, profissional de TI com mais de 20 anos de atuação em infraestrutura, redes e
-              cloud computing. À frente da Nexus TI, gerencio ambientes complexos para mais de 35 empresas
-              simultaneamente — do planejamento até a operação diária.
+              Sou Caio Maracaípe, Engenheiro Civil com mais de 10 anos de atuação em projetos, regularizações e
+              alvarás em Goiânia e Aparecida de Goiânia. À frente da Carvalho Engenharia, transformo projetos em
+              realidade unindo tecnologia, qualidade e atenção às necessidades de cada cliente.
             </p>
             <p>
-              Minha trajetória passa por indústrias farmacêuticas, órgãos públicos como o Tribunal de Contas do
-              Estado de Goiás, Ministério da Saúde e IBAMA, e empresas de diferentes portes e segmentos. Isso me
-              deu visão ampla de problemas reais — e como resolvê-los com eficiência.
+              Minha trajetória abrange residências, comércios, indústrias e órgãos públicos — do alvará de
+              construção à regularização de obras irregulares, passando por projetos estruturais, elétricos e
+              hidrossanitários. Cada caso é tratado com dedicação e compromisso até a entrega final.
             </p>
             <p>
-              Pós-graduado em Segurança da Informação pela UFG e graduado em Redes de Computadores, com foco em
-              ambientes seguros, performáticos e bem documentados.
+              Com registro ativo no CREA (1017786453D-GO), ofereço responsabilidade técnica em todos os projetos e
+              acompanho pessoalmente cada processo junto às prefeituras de Goiânia e Aparecida de Goiânia.
             </p>
           </div>
 
@@ -118,11 +118,30 @@ export function Sobre() {
               key={c.label}
               className="flex items-center gap-3 px-4 py-3 rounded-full border border-cyan-400/20 bg-cyan-400/5 hover:border-cyan-400/50 transition-colors"
             >
-              <c.icon className="text-cyan-400 shrink-0" size={16} />
+              <HardHat className="text-cyan-400 shrink-0" size={16} />
               <div className="leading-tight">
                 <span className="text-white text-sm font-medium">{c.label}</span>
                 <span className="text-white/40 text-xs ml-2">— {c.sub}</span>
               </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Missão / Visão / Valores */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+          {[
+            { titulo: "Missão", descricao: "Transformar projetos em realidade, unindo tecnologia, recursos humanos e qualidade para oferecer soluções práticas e eficientes." },
+            { titulo: "Visão", descricao: "Ser referência em engenharia pela qualidade, confiança e adaptação às necessidades de cada cliente." },
+            { titulo: "Valores", descricao: "Compromisso, ética e dedicação total para atingir objetivos com impacto positivo na sociedade." },
+            { titulo: "Satisfação", descricao: "Atender com excelência, garantindo que cada cliente fique totalmente satisfeito com o resultado." },
+          ].map((item) => (
+            <div
+              key={item.titulo}
+              className="border border-white/10 rounded-xl p-5 hover:border-cyan-400/30 transition-colors group"
+              style={{ backgroundColor: "rgba(255,255,255,0.02)" }}
+            >
+              <p className="text-cyan-400 font-bold text-sm mb-2 group-hover:scale-105 transition-transform">{item.titulo}</p>
+              <p className="text-white/40 text-xs leading-relaxed">{item.descricao}</p>
             </div>
           ))}
         </div>
