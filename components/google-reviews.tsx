@@ -8,108 +8,112 @@ const reviews = [
     initials: "FM",
     color: "#4285F4",
     rating: 5,
-    time: "Há 2 dias",
-    text: "Nossa sede em Goiânia tinha Wi-Fi péssimo. Reunião caindo, sistema lento, funcionário reclamando toda hora. Contratei a Nexus TI e o Caio fez um projeto de rede Wi-Fi com equipamentos UniFi, segmentação por VLANs e controle de autenticação. Parece que trocamos de escritório. Nenhum ponto cego, conexão estável em todos os ambientes. Ele entregou tudo documentado e ainda treinou nossa equipe. Profissional de outro nível.",
-    badge: null,
+    time: "Há 26 semanas",
+    text: "Excelente experiência! Fui muito bem atendido do início ao fim. Todo o processo foi transparente e sem complicações. A equipe cuidou da regularização do meu imóvel com muita competência e ainda acompanharam de perto a liberação do alvará na prefeitura. Super recomendo!",
   },
   {
-    name: "Rafael Barbosa",
-    initials: "RB",
+    name: "Derick Bressan",
+    initials: "DB",
     color: "#EA4335",
     rating: 5,
-    time: "Há 3 dias",
-    text: "Empresa séria, dominam tecnologia de ponta, soluções corporativas de redes e segurança em TI. Terceirizei meus serviços de TI da minha empresa com eles. São os melhores, recomendo.",
-    badge: null,
+    time: "Há 26 semanas",
+    text: "Profissionais sérios, honestos e muito humanos. Explicaram cada etapa, me mantiveram informada o tempo todo e conseguiram desatar todos os nós que meu imóvel tinha (escritura, inventário, prefeitura…). Saí de lá com o maior sorriso e o imóvel 100% regularizado. Vocês são incríveis!",
   },
   {
-    name: "Nonato Junior",
-    initials: "NJ",
+    name: "Ralf Leal",
+    initials: "RL",
     color: "#34A853",
     rating: 5,
-    time: "Há 3 dias",
-    text: "Migrei minha equipe pro Microsoft 365 com a ajuda do Caio. Processo limpo, sem perda de dado, sem tempo parado. Hoje trabalhamos de qualquer lugar com segurança. Excelente serviço.",
-    badge: null,
+    time: "Há 26 semanas",
+    text: "Gostaria de expressar minha profunda admiração pelo trabalho realizado por essa equipe incrível! A dedicação e o cuidado com cada detalhe dos projetos, a atenção especial na regularização dos imóveis e a agilidade no desembaraço de documentos no cartório são impressionantes. O acompanhamento de obras e a liberação de alvarás nas prefeituras demonstram um compromisso constante com a excelência e com o sucesso de seus clientes. É raro encontrar uma empresa que se importa tanto com o processo como um todo, tornando a experiência mais tranquila e eficiente para todos. Parabéns por fazer a diferença de maneira tão humana e profissional!",
   },
   {
-    name: "Flávio Grupo Saga",
-    initials: "FG",
+    name: "Gabriel Ribeiro",
+    initials: "GR",
     color: "#FBBC04",
     rating: 5,
-    time: "Há 3 dias",
-    text: "Aqui na concessionária a rede vivia caindo na hora que mais precisava — fechamento de contrato, consulta de financiamento, sistema do fabricante travando na frente do cliente. Chamei a Nexus TI e o Caio estruturou toda a infraestrutura: rede cabeada pro setor administrativo, Wi-Fi corporativo no showroom e na oficina, firewall separando a rede de clientes da rede interna e monitoramento 24/7. Acabou o improviso. Profissional sério e comprometido com resultado.",
-    badge: null,
-  },
-  {
-    name: "Sandro Jose de Oliveira",
-    initials: "SJ",
-    color: "#9C27B0",
-    rating: 5,
-    time: "Há 3 dias",
-    text: "Eu vivia apagando incêndio de TI dentro da minha empresa. Um dia o servidor caía, outro dia a internet parava, e eu — que não sou da área — ficava perdido sem saber a quem recorrer. Um sócio me indicou o Caio da Nexus TI e foi uma virada de chave. Hoje tenho relatórios mensais, chamados registrados no sistema e não preciso mais me preocupar com TI. Foco total no meu negócio. Recomendo demais.",
-    badge: null,
-  },
-  {
-    name: "Dinâmica Engenharia",
-    initials: "DE",
-    color: "#00BCD4",
-    rating: 5,
-    time: "Há 3 dias",
-    text: "Excelente empresa, competentes, profissionais e muito experientes, sempre com as melhores soluções! Recomendo",
-    badge: null,
-  },
-  {
-    name: "Mairinck Construtora",
-    initials: "MC",
-    color: "#FF5722",
-    rating: 5,
-    time: "Há 3 dias",
-    text: "Contratei a Nexus TI pra estruturar toda a rede da nossa empresa aqui em Goiânia. São quase 200 equipamentos entre desktops e notebooks, com Wi-Fi corporativo em todos os andares. O Caio fez o projeto completo — cabeamento estruturado, switches gerenciáveis, pontos de acesso UniFi com roaming contínuo, segmentação por VLANs por setor e controle de autenticação. Trabalho sério, documentado e entregue no prazo.",
-    badge: null,
-  },
-  {
-    name: "Adan Rodrigues de oliveira",
-    initials: "AR",
-    color: "#E91E63",
-    rating: 5,
-    time: "Há 3 dias",
-    text: "Nossa empresa ficou vulnerável depois que percebemos que qualquer funcionário acessava qualquer site, sem controle nenhum. Chamei a Nexus TI e o Caio implantou um firewall com Fortigate, criou políticas de acesso por setor, filtragem de conteúdo e auditoria de tráfego. Em menos de uma semana o ambiente estava sob controle. Segurança de verdade, sem exagero.",
-    badge: null,
-  },
-  {
-    name: "José Felipe Pereira dos Santos",
-    initials: "JF",
-    color: "#607D8B",
-    rating: 5,
-    time: "Há 4 dias",
-    text: "Ótimo atendimento, equipe muito profissional e prestativa. Recomendo!",
-    badge: null,
-  },
-  {
-    name: "Rafael Reis Reis",
-    initials: "RR",
-    color: "#FF7043",
-    rating: 5,
-    time: "Ontem",
-    text: "Não imaginava que um salão precisava de TI até o sistema de agendamento cair num sábado lotado. O Caio da Nexus TI resolveu remoto em minutos, organizou nossa rede e ainda configurou um Wi-Fi separado pra clientes. Nunca mais tive problema. Indico muito!",
-    badge: null,
-  },
-  {
-    name: "Eduardo P. A",
-    initials: "EP",
-    color: "#26A69A",
-    rating: 5,
-    time: "Há 2 dias",
-    text: "No consultório qualquer minuto parado é prejuízo. Sistema de agendamento fora, prontuário inacessível, internet caindo — já passei por tudo isso. O Caio da Nexus TI resolveu de vez: rede estável, backup automático dos dados dos pacientes e suporte rápido quando preciso. Trabalho sério e atendimento de confiança.",
-    badge: null,
+    time: "Há 26 semanas",
+    text: "A equipe da Carvalho é simplesmente excepcional! Sempre atenciosos, eles tornam o processo de regularização e liberação de alvarás simples e sem estresse. Cada etapa é tratada com dedicação e transparência, sempre com foco em oferecer o melhor para o cliente. Altamente recomendados!",
   },
   {
     name: "Welington Machado",
     initials: "WM",
+    color: "#9C27B0",
+    rating: 5,
+    time: "Há 26 semanas",
+    text: "Excelente profissional",
+  },
+  {
+    name: "Gabriel S. Miranda",
+    initials: "GM",
+    color: "#00BCD4",
+    rating: 5,
+    time: "Há 26 semanas",
+    text: "Profissional ao extremo",
+  },
+  {
+    name: "Marcelo Ferreira",
+    initials: "MF",
+    color: "#FF5722",
+    rating: 5,
+    time: "Há 26 semanas",
+    text: "Serviço nota mil! Fizeram meu projeto, cuidaram de toda a papelada na prefeitura e no cartório e eu praticamente não precisei me preocupar com nada. Atendimento gentil, rápido e super humano. Finalmente uma empresa que entende que do outro lado tem gente de verdade com suas angústias. Parabéns!",
+  },
+  {
+    name: "João Luiz Chicco",
+    initials: "JL",
+    color: "#607D8B",
+    rating: 5,
+    time: "Há 26 semanas",
+    text: "A Carvalho Engenharia, sob a orientação do engenheiro Caio, faz toda a diferença! Eles não apenas entregam um trabalho de qualidade, mas também se dedicam de coração, sempre prontos para ajudar e esclarecer todas as dúvidas. É uma sensação de tranquilidade saber que estamos em mãos tão competentes e cuidadosas. Recomendo de olhos fechados!",
+  },
+  {
+    name: "Libio Felipe",
+    initials: "LF",
+    color: "#FF7043",
+    rating: 5,
+    time: "Há 26 semanas",
+    text: "Ótimo profissional, me auxiliou do começo ao fim! Recomendo.",
+  },
+  {
+    name: "Adan Rodrigues de oliveira",
+    initials: "AR",
+    color: "#26A69A",
+    rating: 5,
+    time: "Há 26 semanas",
+    text: "Ótimo atendimento, cumpri prazos, e serviço bem executado",
+  },
+  {
+    name: "Leandro Melo (Leo Henrique)",
+    initials: "LM",
     color: "#5C6BC0",
     rating: 5,
-    time: "Há 3 dias",
-    text: "Ótimo serviço, profissional competente e de confiança. Recomendo!",
-    badge: null,
+    time: "Há 25 semanas",
+    text: "Entregou o projeto dentro do prazo, com detalhes. Com certeza irei contratar novamente. Agradeço a atenção aos detalhes. Confiável, eu recomendo.",
+  },
+  {
+    name: "Luis Paulo",
+    initials: "LP",
+    color: "#E91E63",
+    rating: 5,
+    time: "Há 25 semanas",
+    text: "Gostaria de expressar meu sincero agradecimento e profunda admiração pelo trabalho de engenharia de altíssima qualidade que foi entregue. É evidente o rigor técnico, a meticulosidade e o comprometimento dedicados a este projeto. O projeto final não apenas atendeu, mas superou as especificações técnicas iniciais, mantendo uma precisão dimensional/funcional impecável, em total conformidade com as normas (ABNT, ISO) e regulamentações vigentes. A entrega de toda a documentação técnica foi realizada com uma clareza e um nível de detalhe que facilitará enormemente as próximas etapas. Este resultado é um testemunho do excelente profissionalismo e da experiência técnica inquestionável. Parabéns!",
+  },
+  {
+    name: "Sandro Jose de Oliveira",
+    initials: "SJ",
+    color: "#795548",
+    rating: 5,
+    time: "Há 25 semanas",
+    text: "Fui bem atendido desde o inicio da contratacao ate o final. Eles tem um exelente pos venda, o que conta muito nessa hora. Indico essa Empresa, para todos que querem fazer um projeto e nao ter dor de cabeça.",
+  },
+  {
+    name: "Rafael Reis Reis",
+    initials: "RR",
+    color: "#F57C00",
+    rating: 5,
+    time: "Há 25 semanas",
+    text: "Atendimento de excelência, profissional super competente e comprometido, indico a todos os amigos",
   },
 ];
 
@@ -177,7 +181,7 @@ export default function GoogleReviews() {
             <span className="text-5xl font-bold text-white">5,0</span>
             <div className="flex flex-col gap-1">
               <StarRating count={5} />
-              <span className="text-white/50 text-sm">12 avaliações</span>
+              <span className="text-white/50 text-sm">14 avaliações</span>
             </div>
           </div>
         </div>
@@ -208,18 +212,13 @@ export default function GoogleReviews() {
                   <p className="text-white font-medium text-sm leading-tight truncate">
                     {review.name}
                   </p>
-                  <div className="flex items-center gap-2">
-                    {review.badge && (
-                      <span className="text-xs text-blue-400">{review.badge}</span>
-                    )}
-                    <span className="text-white/40 text-xs">{review.time}</span>
-                  </div>
+                  <span className="text-white/40 text-xs">{review.time}</span>
                 </div>
               </div>
 
               <StarRating count={review.rating} />
 
-              <p className="text-white/70 text-sm leading-relaxed flex-1">
+              <p className="text-white/70 text-sm leading-relaxed flex-1 line-clamp-6">
                 {review.text}
               </p>
             </div>
@@ -262,7 +261,7 @@ export default function GoogleReviews() {
 
         <div className="flex justify-center mt-6">
           <a
-            href="https://www.google.com/search?kgmid=/g/11z5b8qv04&hl=pt-BR&q=Nexus+TI&shem=rimspwouoe&shndl=30&source=sh/x/loc/osrp/m5/1&kgs=9f7301d02fce00d2&utm_source=rimspwouoe,sh/x/loc/osrp/m5/1&sei=TY72aY-gD8Oz5OUPlYClYCy-Qc#"
+            href="https://share.google/XiHUDZzpLsAOmXMyd"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm text-white/40 hover:text-white/70 transition-colors"
