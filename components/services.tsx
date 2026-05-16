@@ -1,99 +1,50 @@
 "use client"
 
 import {
-  Users,
-  Server,
-  Shield,
-  Wifi,
-  Database,
+  Search,
+  Wrench,
+  FileText,
   Building2,
-  Eye,
-  Network,
-  LayoutDashboard,
-  Camera,
-  Cable,
-  KeyRound,
-  Mail,
+  ClipboardList,
+  HardHat,
 } from "lucide-react"
 
 const services = [
   {
-    title: "Terceirização de TI",
+    title: "Perícias e Vistorias Técnicas",
     description:
-      "Gestão completa do parque tecnológico com suporte técnico L1/L2/L3 e manutenção preventiva. Ideal para empresas que querem foco total no core business.",
-    icon: Users,
+      "Laudos técnicos detalhados para avaliar a segurança e conformidade do seu imóvel. Relatórios assinados por Engenheiro Civil com registro CREA.",
+    icon: Search,
   },
   {
-    title: "Suporte a Redes e Servidores",
+    title: "Projetos de Engenharia",
     description:
-      "Suporte técnico especializado em servidores físicos e em nuvem (AWS, Azure, GCP), virtualização e interligação de unidades com zero downtime.",
-    icon: Server,
+      "Projetos Estruturais, Elétricos e Hidrossanitários completos para residências e comércios. Do croqui ao projeto executivo aprovado.",
+    icon: Wrench,
   },
   {
-    title: "Active Directory & Identidade",
+    title: "Alvará de Construção",
     description:
-      "Implantação e administração de Active Directory com GPOs, DNS, DHCP e File Server. Gestão de usuários, permissões e políticas de segurança corporativa.",
-    icon: KeyRound,
+      "Aprovação de projetos e obtenção de Alvará de Construção junto à Prefeitura. Habite-se, Carta de Ocupação e Alvará de Funcionamento para empresas.",
+    icon: FileText,
   },
   {
-    title: "Office 365 e Microsoft 365",
+    title: "Alvarás junto às Prefeituras",
     description:
-      "Gestão completa do Microsoft 365: licenças, Exchange Online, SharePoint, Teams e segurança de identidade com Azure AD.",
-    icon: Mail,
-  },
-  {
-    title: "Segurança e Firewall Corporativo",
-    description:
-      "Proteção perimetral com Fortinet, pfSense e UDM-Pro. Controle de acesso, filtragem de conteúdo e auditoria contínua para sua empresa.",
-    icon: Shield,
-  },
-  {
-    title: "Wi-Fi Corporativo em Goiânia",
-    description:
-      "Redes Wi-Fi de alta densidade com roaming contínuo (UniFi, Aruba, Cisco), segmentação por VLANs e controle de autenticação.",
-    icon: Wifi,
-  },
-  {
-    title: "Migração de Data Center",
-    description:
-      "Planejamento e execução de migrações físicas e lógicas — rede, servidores, backup e acesso remoto — do zero ao go-live.",
+      "Assessoria completa para aprovações junto à Prefeitura de Goiânia e Aparecida de Goiânia. Desmembramento, retificação de áreas e averbação em cartório.",
     icon: Building2,
   },
   {
-    title: "Backup & Disaster Recovery",
+    title: "Regularização de Imóveis",
     description:
-      "Proteção total com Veeam Backup & Replication. Estratégias de DR testadas, com RPO e RTO definidos em contrato.",
-    icon: Database,
+      "Regularização de obras construídas sem alvará, ampliações e reformas não documentadas. INSS de obras e conformidade com a legislação vigente.",
+    icon: ClipboardList,
   },
   {
-    title: "Monitoramento de Redes 24/7",
+    title: "Acompanhamento de Obras",
     description:
-      "Monitoramento proativo de redes e servidores com Zabbix. Alertas automáticos, relatórios de disponibilidade e gestão de chamados via GLPI.",
-    icon: Eye,
-  },
-  {
-    title: "SD-WAN & Links Dedicados",
-    description:
-      "Balanceamento de carga, failover automático de links e VPNs IPsec site-to-site para múltiplas unidades sem interrupção.",
-    icon: Network,
-  },
-  {
-    title: "Help Desk com GLPI",
-    description:
-      "Implantação e gestão de sistema de chamados, controle de ativos, notificações e automações para equipes de TI.",
-    icon: LayoutDashboard,
-  },
-  {
-    title: "CFTV e Controle de Acesso",
-    description:
-      "Instalação de câmeras IP, NVRs, leitores biométricos e fechaduras eletromagnéticas integradas à rede corporativa.",
-    icon: Camera,
-  },
-  {
-    title: "Cabeamento Estruturado e Fibra Óptica",
-    description:
-      "Infraestrutura Cat5e/Cat6, GPON/EPON, OLT, DIO e conversores para ambientes corporativos de alta disponibilidade em Goiânia.",
-    icon: Cable,
+      "Gestão e execução de obras residenciais e comerciais do início ao fim. ART (Anotação de Responsabilidade Técnica) e controle de qualidade em cada etapa.",
+    icon: HardHat,
   },
 ]
 
@@ -104,16 +55,19 @@ export function Services() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
+          <p className="text-xs font-semibold tracking-widest text-[#00aaff] uppercase mb-4">
+            Nossos Serviços
+          </p>
           <h2 className="text-3xl md:text-4xl font-bold text-[#fafafa] mb-4 tracking-tight">
-            Suporte TI e Infraestrutura{" "}
-            <span className="text-[#00aaff]">para Empresas</span>
+            Soluções completas{" "}
+            <span className="text-[#00aaff]">em engenharia</span>
           </h2>
           <p className="text-[#888888] max-w-2xl mx-auto">
-            Terceirização de TI completa, suporte técnico especializado e infraestrutura de redes para empresas em Goiânia que não podem parar.
+            Da perícia técnica ao acompanhamento de obras. Cuidamos de todo o processo para que você não precise se preocupar.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
@@ -126,13 +80,20 @@ export function Services() {
                   <service.icon className="w-6 h-6 text-[#00aaff]" />
                 </div>
 
-                <h3 className="text-xl font-bold text-[#fafafa] mb-3 group-hover:text-[#00aaff] transition-colors">
+                <h3 className="text-xl font-bold text-[#00aaff] mb-3">
                   {service.title}
                 </h3>
 
-                <p className="text-sm leading-relaxed text-[#888888] group-hover:text-[#aaaaaa] transition-colors">
+                <p className="text-sm leading-relaxed text-[#888888] group-hover:text-[#aaaaaa] transition-colors mb-6">
                   {service.description}
                 </p>
+
+                <a
+                  href="#contato"
+                  className="inline-flex items-center gap-1 text-sm text-[#00aaff] hover:underline"
+                >
+                  Solicitar orçamento →
+                </a>
               </div>
             </div>
           ))}
