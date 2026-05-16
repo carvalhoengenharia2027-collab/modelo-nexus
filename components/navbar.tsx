@@ -23,6 +23,7 @@ export function Navbar() {
     { href: "#sobre", label: "Quem Somos" },
     { href: "#depoimentos", label: "Depoimentos" },
     { href: "#contato", label: "Contato" },
+    { href: "/blog", label: "Blog" },
   ]
 
   return (
