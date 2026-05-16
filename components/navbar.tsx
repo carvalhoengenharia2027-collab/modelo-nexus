@@ -74,9 +74,10 @@ export function Navbar() {
               <Image
                 src="/logo_carv.png"
                 alt="Carvalho Engenharia"
-                width={180}
-                height={60}
-                className="h-10 w-auto sm:h-12 object-contain"
+                width={220}
+                height={70}
+                className="h-12 w-auto sm:h-14 object-contain"
+                style={{ mixBlendMode: "lighten" }}
                 priority
               />
             </a>
