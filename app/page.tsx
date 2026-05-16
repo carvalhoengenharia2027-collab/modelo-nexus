@@ -7,7 +7,7 @@ import MarqueeLogos from "@/components/marquee-logos"
 import { WhyUs } from "@/components/why-us"
 import { PricingPlans } from "@/components/pricing-plans"
 import { Sobre } from "@/components/sobre"
-import { Terminal } from "@/components/terminal"
+import { Testimonials } from "@/components/terminal"
 import { CTASection } from "@/components/cta-section"
 import GoogleReviews from "@/components/google-reviews"
 import ClientLogos from "@/components/client-logos"
@@ -25,7 +25,7 @@ export default function Home() {
       <WhyUs />
       <PricingPlans />
       <Sobre />
-      <Terminal />
+      <Testimonials />
       <CTASection />
       <ClientLogos />
       <GoogleReviews />
