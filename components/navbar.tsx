@@ -75,8 +75,7 @@ export function Navbar() {
               <img
                 src="/logo_carv.png"
                 alt="Carvalho Engenharia"
-                className="h-16 w-auto sm:h-20 object-contain"
-                style={{ mixBlendMode: "lighten" }}
+                style={{ mixBlendMode: "lighten", width: "280px", height: "auto" }}
               />
             </a>
 
