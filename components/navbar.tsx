@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Phone, Mail, Clock } from "lucide-react"
+import { Menu, X, Phone, Mail } from "lucide-react"
+import Image from "next/image"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -17,10 +18,10 @@ export function Navbar() {
   }, [])
 
   const navLinks = [
-    { href: "#sobre", label: "Quem Somos" },
     { href: "#servicos", label: "Serviços" },
-    { href: "#infraestrutura", label: "Infraestrutura" },
-    { href: "#seguranca", label: "Segurança" },
+    { href: "#vantagens", label: "Vantagens" },
+    { href: "#sobre", label: "Quem Somos" },
+    { href: "#depoimentos", label: "Depoimentos" },
     { href: "#contato", label: "Contato" },
   ]
 
@@ -39,11 +40,11 @@ export function Navbar() {
             </a>
             <span className="text-[#2a2a2a]">|</span>
             <a
-              href="mailto:contato@nexusti.tec.br"
+              href="mailto:carvalhoeng@outlook.com.br"
               className="flex items-center gap-1.5 hover:text-[#00aaff] transition-colors"
             >
               <Mail size={12} />
-              contato@nexusti.tec.br
+              carvalhoeng@outlook.com.br
             </a>
             <span className="text-[#2a2a2a]">|</span>
             <span className="flex items-center gap-2 px-3 py-1 rounded-full border border-[#00aaff]/40 bg-[#00aaff]/10 text-[#00aaff] font-semibold tracking-wide shadow-[0_0_12px_rgba(0,170,255,0.25)]">
@@ -51,7 +52,7 @@ export function Navbar() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00aaff] opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00aaff]" />
               </span>
-              Plantão 24h · 7 dias por semana
+              CREA 1017786453D-GO
             </span>
           </div>
         </div>
@@ -70,47 +71,14 @@ export function Navbar() {
 
             {/* Logo */}
             <a href="/" className="flex items-center hover:opacity-90 transition-opacity">
-              <svg
-                width="180"
-                height="60"
-                viewBox="0 0 200 80"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-auto sm:h-12"
-              >
-                <path
-                  d="M10 15L35 40L10 65M30 15L55 40L30 65"
-                  stroke="#00aaff"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M80 15L55 40L80 65M60 15L35 40L60 65"
-                  stroke="#94a3b8"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <circle cx="35" cy="40" r="3" fill="#00aaff" />
-                <circle cx="55" cy="40" r="3" fill="#94a3b8" />
-                <text
-                  x="95"
-                  y="45"
-                  fill="#fafafa"
-                  style={{ fontFamily: 'sans-serif', fontWeight: 'bold', fontSize: '24px', letterSpacing: '-0.5px' }}
-                >
-                  NEXUS
-                </text>
-                <text
-                  x="95"
-                  y="68"
-                  fill="#00aaff"
-                  style={{ fontFamily: 'sans-serif', fontWeight: 'bold', fontSize: '18px' }}
-                >
-                  TI
-                </text>
-              </svg>
+              <Image
+                src="/logo_carv.png"
+                alt="Carvalho Engenharia"
+                width={180}
+                height={60}
+                className="h-10 w-auto sm:h-12 object-contain"
+                priority
+              />
             </a>
 
             {/* Desktop Navigation */}
@@ -132,7 +100,9 @@ export function Navbar() {
                 asChild
                 className="bg-[#00aaff] text-[#080808] hover:bg-[#00aaff]/90 font-semibold shadow-[0_0_25px_rgba(0,170,255,0.5)] hover:shadow-[0_0_40px_rgba(0,170,255,0.7)] transition-all duration-300"
               >
-                <a href="#contato">Solicitar Orçamento</a>
+                <a href="https://wa.me/5562998062169" target="_blank" rel="noopener noreferrer">
+                  Solicitar Orçamento
+                </a>
               </Button>
             </div>
 
@@ -155,15 +125,15 @@ export function Navbar() {
                   <a href="tel:+556298062169" className="flex items-center gap-2 hover:text-[#00aaff] transition-colors">
                     <Phone size={12} /> (62) 9 9806-2169
                   </a>
-                  <a href="mailto:contato@nexusti.tec.br" className="flex items-center gap-2 hover:text-[#00aaff] transition-colors">
-                    <Mail size={12} /> contato@nexusti.tec.br
+                  <a href="mailto:carvalhoeng@outlook.com.br" className="flex items-center gap-2 hover:text-[#00aaff] transition-colors">
+                    <Mail size={12} /> carvalhoeng@outlook.com.br
                   </a>
                   <span className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#00aaff]/40 bg-[#00aaff]/10 text-[#00aaff] font-semibold text-xs self-start shadow-[0_0_10px_rgba(0,170,255,0.2)]">
                     <span className="relative flex h-2 w-2">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00aaff] opacity-75" />
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00aaff]" />
                     </span>
-                    Plantão 24h · 7 dias por semana
+                    CREA 1017786453D-GO
                   </span>
                 </div>
 
@@ -181,7 +151,12 @@ export function Navbar() {
                   asChild
                   className="bg-[#00aaff] text-[#0a0a0a] hover:bg-[#00aaff]/90 font-medium mt-2 shadow-[0_0_20px_rgba(0,170,255,0.4)]"
                 >
-                  <a href="#contato" onClick={() => setIsMobileMenuOpen(false)}>
+                  <a
+                    href="https://wa.me/5562998062169"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     Solicitar Orçamento
                   </a>
                 </Button>
