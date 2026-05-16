@@ -1,19 +1,18 @@
 "use client"
 
-import { Instagram, Linkedin, Mail } from "lucide-react"
+import { Instagram, Mail } from "lucide-react"
 import Link from "next/link"
 
 const quickLinks = [
   { href: "#servicos", label: "Serviços" },
-  { href: "#infraestrutura", label: "Infraestrutura" },
-  { href: "#seguranca", label: "Segurança" },
+  { href: "#sobre", label: "Empresa" },
+  { href: "#vantagens", label: "Vantagens" },
   { href: "#contato", label: "Contato" },
 ]
 
 const socialLinks = [
-  { href: "https://instagram.com/nexus.infra.ti", icon: Instagram, label: "Instagram" },
-  { href: "https://www.linkedin.com/in/caiocarvalhoc/", icon: Linkedin, label: "LinkedIn" },
-  { href: "mailto:contato@nexusti.tec.br", icon: Mail, label: "Email" },
+  { href: "https://www.instagram.com/carvalho.eng", icon: Instagram, label: "Instagram" },
+  { href: "mailto:carvalhoeng@outlook.com.br", icon: Mail, label: "Email" },
 ]
 
 export function Footer() {
@@ -25,20 +24,19 @@ export function Footer() {
           <div>
             <a href="#" className="flex items-center gap-0.5 mb-4">
               <span className="font-mono text-lg font-bold text-[#fafafa] tracking-tight">
-                Nexus TI
+                Carvalho Engenharia
               </span>
               <span className="w-2.5 h-5 bg-[#33bbff] animate-[blink_1s_steps(1)_infinite]" aria-hidden="true" />
             </a>
             <p className="text-sm text-[#888888]">
-              Infraestrutura de TI para empresas que não podem parar.
+              Alvarás, regularizações e projetos de engenharia em Goiânia e região.
             </p>
             <p className="text-sm text-[#666666] mt-2">
-              Av. Deputado Jamel Cecilio, 3310, Sala 301
+              Edifício Office Flamboyant — Av. Dep. Jamel Cecílio, 3310, Sala 301
             </p>
             <p className="text-sm text-[#666666]">
               Jardim Goiás — Goiânia/GO
             </p>
-            {/* ✅ WhatsApp correto */}
             <a
               href="https://wa.me/5562998062169"
               target="_blank"
@@ -84,15 +82,18 @@ export function Footer() {
                 </a>
               ))}
             </div>
-            {/* ✅ E-mail visível */}
-            <p className="text-xs text-[#666666] mt-4">contato@nexusti.tec.br</p>
+            <p className="text-xs text-[#666666] mt-4">carvalhoeng@outlook.com.br</p>
+            <p className="text-xs text-[#666666] mt-1">
+              Resp. Técnico: Engº Civil Caio Maracaípe
+            </p>
+            <p className="text-xs text-[#666666]">CREA 1017786453D-GO</p>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-[#1a1a1a] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-[#666666]">
-            © {new Date().getFullYear()} Nexus TI. Todos os direitos reservados.
+            © {new Date().getFullYear()} Carvalho Engenharia. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-4">
             <Link
