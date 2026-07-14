@@ -41,8 +41,8 @@ export function Sobre() {
           <div className="flex justify-center lg:justify-end shrink-0">
             <div
               style={{
-                width: "180px",
-                height: "220px",
+                width: "200px",
+                height: "245px",
                 borderRadius: "20px",
                 overflow: "hidden",
                 border: "1px solid rgba(0,170,255,0.35)",
@@ -51,7 +51,7 @@ export function Sobre() {
               }}
             >
               <img
-                src="https://res.cloudinary.com/ddnbvkduq/image/upload/f_auto,q_auto/foto-perfil_vqdn8m.jpg"
+                src="/caio.jpg"
                 alt="Caio Maracaípe — Engenheiro Civil"
                 style={{
                   width: "100%",
